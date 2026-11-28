@@ -13,12 +13,12 @@ Control your lights from the desktop or system tray, see room temperature and hu
 [![License: MIT](https://img.shields.io/badge/License-MIT-2ea44f.svg)](LICENSE)
 [![Platform: Linux / KDE Plasma](https://img.shields.io/badge/Platform-Linux%20%7C%20KDE%20Plasma-1d99f3.svg)](#requirements)
 
-> **Lysnav v1.0.5 is available as a Linux x86_64 AppImage.** Dialogs adapt to larger fonts and smaller displays, and the colour temperature slider previews the selected Kelvin value. The Flatpak is still undergoing runtime testing.
+> **Lysnav v1.1.0 is available as a Linux x86_64 AppImage.** This version adds a warm-to-cool slider gradient, room colour mode indicators and smoother colour wheel edges. The Flatpak is still undergoing runtime testing.
 
 App screenshots use sample rooms and devices.
 
 <p align="center">
-  <img src="docs/screenshots/main-window.png" alt="Lysnav for KDE Plasma's main window showing approved room and individual light controls" width="900">
+  <img src="docs/screenshots/main-window.png?v=1.1.0" alt="Lysnav for KDE Plasma's main window showing approved room and individual light controls" width="900">
 </p>
 
 <p align="center"><sub>Room-wide and individual light controls.</sub></p>
@@ -40,10 +40,14 @@ The app provides per-device and per-room power, brightness, colour temperature, 
 
 ### Live colour control
 
+The colour temperature slider uses a fixed warm-to-cool gradient. The track dims when a light
+uses RGB. Room controls show mixed temperatures or mixed modes when lights differ. Moving the
+room slider sets all approved lights in that room to white within their shared temperature range.
+
 Move the colour wheel to preview changes immediately on your approved RGB lights, without closing the picker after every adjustment.
 
 <p align="center">
-  <img src="docs/screenshots/colour-wheel.png" alt="Live colour wheel for RGB light control" width="520">
+  <img src="docs/screenshots/colour-wheel.png?v=1.1.0" alt="Live colour wheel for RGB light control" width="520">
 </p>
 
 ### Climate readings
@@ -75,12 +79,12 @@ These two tray screenshots show the pre-rebrand release.
 
 ### AppImage
 
-Download `Lysnav-Plasma-v1.0.5-x86_64.AppImage` and `SHA256SUMS.txt` from the [v1.0.5 release](https://github.com/alsiniz/lysnav-plasma/releases/tag/v1.0.5). Place both files in the same directory and run the following commands there. If an earlier version is running, choose **Quit** from its tray menu first.
+Download `Lysnav-Plasma-v1.1.0-x86_64.AppImage` and `SHA256SUMS.txt` from the [v1.1.0 release](https://github.com/alsiniz/lysnav-plasma/releases/tag/v1.1.0). Place both files in the same directory and run the following commands there. If an earlier version is running, choose **Quit** from its tray menu first.
 
 ```bash
 sha256sum -c SHA256SUMS.txt
-chmod +x Lysnav-Plasma-v1.0.5-x86_64.AppImage
-./Lysnav-Plasma-v1.0.5-x86_64.AppImage
+chmod +x Lysnav-Plasma-v1.1.0-x86_64.AppImage
+./Lysnav-Plasma-v1.1.0-x86_64.AppImage
 ```
 
 For convenience you may integrate the AppImage into your application launcher using a tool that supports AppImages; direct execution remains supported. An optional **nonfatal portal app-ID warning** may appear when starting directly from a download folder because the portable app is not registered as an installed desktop application.
@@ -167,9 +171,9 @@ Choose a tray icon from the icon theme already installed and selected in KDE Pla
 
 ## Package availability
 
-| Format | v1.0.5 availability | Status |
+| Format | v1.1.0 availability | Status |
 | --- | --- | --- |
-| **AppImage (x86_64)** | [GitHub Releases](https://github.com/alsiniz/lysnav-plasma/releases/tag/v1.0.5) | The original v1.0.0 AppImage was tested on Bazzite / KDE Plasma, including clean in-app pairing |
+| **AppImage (x86_64)** | [GitHub Releases](https://github.com/alsiniz/lysnav-plasma/releases/tag/v1.1.0) | The original v1.0.0 AppImage was tested on Bazzite / KDE Plasma, including clean in-app pairing |
 | **Source installer** | This repository | Available; requires a one-time Python dependency download |
 | **Flatpak** | Not published | Builds in GitHub Actions, but actual KDE Plasma runtime behavior and pairing still need validation |
 

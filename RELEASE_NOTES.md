@@ -1,19 +1,19 @@
 # Lysnav for KDE Plasma
 
-## 1.0.5
+## 1.1.0
 
-- Dialogs adapt to font size and available screen space. Long forms scroll with their action buttons visible.
-- Hub settings gives the DHCP note room to wrap. The two pairing instructions stay together beside the hub illustration.
-- The existing colour temperature slider shows the selected Kelvin value as a live tint. Its track is muted in RGB mode, and keyboard adjustments use the existing temperature command.
+- Colour temperature sliders use a fixed warm-to-cool gradient. RGB mode dims the track while keeping the slider usable.
+- Room controls identify mixed temperatures and mixed modes. Adjusting the room slider switches all approved lights in that room to white within their shared temperature range.
+- The temperature track and thumb have clean edges, and the live colour wheel is antialiased at the display's scale.
 
 ### Download and run
 
-Download `Lysnav-Plasma-v1.0.5-x86_64.AppImage` and `SHA256SUMS.txt` into the same directory. Quit the old app from its tray menu, then run these commands from the download directory.
+Download `Lysnav-Plasma-v1.1.0-x86_64.AppImage` and `SHA256SUMS.txt` into the same directory. Quit the old app from its tray menu, then run these commands from the download directory.
 
 ```sh
 sha256sum -c SHA256SUMS.txt
-chmod +x Lysnav-Plasma-v1.0.5-x86_64.AppImage
-./Lysnav-Plasma-v1.0.5-x86_64.AppImage
+chmod +x Lysnav-Plasma-v1.1.0-x86_64.AppImage
+./Lysnav-Plasma-v1.1.0-x86_64.AppImage
 ```
 
 ### Upgrading from DIRIGERA Plasma

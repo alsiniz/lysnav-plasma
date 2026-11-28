@@ -2,7 +2,7 @@
 
 ## AppImage
 
-The v1.0.5 release distributes `Lysnav-Plasma-v1.0.5-x86_64.AppImage` and its SHA-256 checksum through [GitHub Releases](https://github.com/alsiniz/lysnav-plasma/releases/tag/v1.0.5). Bazzite KDE Plasma is the distribution verified on a real desktop so far.
+The v1.1.0 release distributes `Lysnav-Plasma-v1.1.0-x86_64.AppImage` and its SHA-256 checksum through [GitHub Releases](https://github.com/alsiniz/lysnav-plasma/releases/tag/v1.1.0). Bazzite KDE Plasma is the distribution verified on a real desktop so far.
 
 Build: `./packaging/appimage/build.sh`. CI runs `.github/workflows/release-appimage.yml`, uploads the AppImage and `SHA256SUMS.txt`, and tags the build commit with the version from `version.py`.
 

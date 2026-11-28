@@ -21,7 +21,7 @@ def literals(source: str) -> set[str]:
 class PresentationTests(unittest.TestCase):
     def test_public_support_link_and_version(self):
         self.assertEqual(KOFI_URL, 'https://ko-fi.com/alsiniz')
-        self.assertEqual(VERSION, '1.0.5')
+        self.assertEqual(VERSION, '1.1.0')
 
     def test_brightness_osd_requests_no_icon(self):
         tree = ast.parse((ROOT / 'tray_sni.py').read_text())
